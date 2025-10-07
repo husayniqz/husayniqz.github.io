@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Personal Web</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+        /* Style untuk halaman artikel */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .articles {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card-article {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+            width: 30%;
+            box-sizing: border-box;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .card-article img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+        }
+
+        .card-article strong {
+            margin-bottom: 10px;
+            display: block;
+            font-weight: 600;
+        }
+
+        .btn-article {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            user-select: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-article:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .articles {
+                flex-direction: column;
+            }
+
+            .card-article {
+                width: 100%;
+            }
+        }
+
+        /* Style untuk kontak */
+        .contact-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px 30px;
+            border: 1px solid #3b70d4;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+
+        .contact-container h2 {
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .contact-container p {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .btn-whatsapp {
+            background-color: #247746;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1c5c39;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Selamat Datang -->
+    <section class="my-5">
+        <div class="container py-5">
+            <div class="card border-0 bg-light p-4 rounded-5">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h5><strong>SELAMAT DATANG DI WEBSITE INI</strong></h5>
+                            <h1><strong>HUSAYNI QOSIMA ZAHRO</strong></h1>
+                            <p>saya masuk sd tahun 2015 di sdn sidomekar 1 lalu saya lulus dari sd tahun 2021
+lalu melanjutkan ke spmm 10 semboro saya masuk smp tahun 2021 saya lulus dari smp tahun 2024
+lalu saya melanjutkan sekolah di smkn 8 jember saya memilih smk ini karena jarak mya yang tidak terlalu jauh dari rumah saya
+saya disini masuk ke jurusan rpl atau rekayasa perangkat lunak
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images (5).jpg" class="img-fluid shadow-lg rounded-5" alt="Foto HUSAYNI QOSIMA ZAHRO" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Riwayat Pendidikan dan Tahun -->
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="riwayat-pendidikan">
+                    <div class="card rounded-4 border-warning">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Riwayat Pendidikan</h3>
+
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5>SMKN 8 JEMBER</h5>
+                                    <p>Jurusan Rekayasa Perangkat Lunak</p>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5>SMPM 10 SEMBORO</h5>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h5>SDN SIDOMEKAR 1</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="keahlian">
+                    <div class="card rounded-4 border-primary">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">TAHUN</h3>
+
+                            <div class="alert alert-primary">
+                                2024-Sekarang
+                            </div>
+                            <div class="alert alert-primary">
+                                2021-2024
+                            </div>
+                            <div class="alert alert-primary">
+                                2015-2021
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Artikel -->
+    <section class="my-5">
+        <div class="container bg-white p-4 rounded-4 shadow-sm">
+            <h1>PENDIDIKAN SAYA </h1>
+            <p class="subtitle">sekolah saya</p>
+            <div class="articles">
+                <div class="card-article">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0RfdAaUekS6nehVF_HbgBDCIuQcX7RUFB9Q&s" alt="web smk dj" />
+                    <strong>WEB SMKN 8 JEMBER</strong>
+                    <a class="btn btn-primary" href="https://smkn8jember.sch.id/tag/smkdj/" role="button">Link</a>
+                </div>
+                <div class="card-article">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgXzC41UQVi_9JOaglke3wr9ouDx-rjzl3A&s " alt="WEB SMPM 10 SEMBORO" />
+                    <strong>WEB SMPM 10 SEMBORO</strong>
+                    <a class="btn btn-primary" href="https://dapo.kemendikdasmen.go.id/sekolah/6E6862318439522D4E03" role="button">Link</a>
+                </div>
+                <div class="card-article">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLpy8lW_b7YYroM6p7vjjGjR26ZmMBVIxAtA&s" alt="Tips dan Trik Belajar Web" />
+                    <strong>WEB SDN SIDOMEKAR 1 </strong>
+                    <a class="btn btn-primary" href="https://dapo.kemendikdasmen.go.id/sekolah/6E6862318439522D4E03" role="button">Link</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section class="my-5">
+        <div class="contact-container">
+            <h2>Hubungi Saya!</h2>
+
+             <p>Jika ada keperluan, silahkan hubungi saya di</p>
+             
+            <a href="https://wa.me/nomor_anda" target="_blank" class="btn-whatsapp">Whatsapp</a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+</html>
